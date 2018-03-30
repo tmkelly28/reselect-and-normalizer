@@ -1,0 +1,39 @@
+{
+  "pugs": [
+    {
+      "id": "1",
+      "name": "Cody",
+      "color": "fawn",
+      "ownerId": "1",
+      "owner": {
+        "id": "1",
+        "name": "Tom"
+      }
+    },
+    {
+      "id": "2",
+      "name": "Peggy",
+      "color": "black",
+      "ownerId": "2",
+      "owner": {
+        "id": "2",
+        "name": "Pam"
+      }
+    },
+    {
+      "id": "3",
+      "name": "Doug",
+      "color": "fawn"
+    }
+  ],
+  "owners": [
+    {
+      "id": "1",
+      "name": "Tom"
+    },
+    {
+      "id": "2",
+      "name": "Pam"
+    }
+  ]
+}
