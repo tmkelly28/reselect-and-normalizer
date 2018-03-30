@@ -1,5 +1,4 @@
-import {schema} from 'normalizr'
-
+import {schema} from 'normalizr' 
 export const Owner = new schema.Entity('owners')
 export const Pug = new schema.Entity('pugs', {
   owner: Owner

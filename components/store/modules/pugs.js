@@ -7,6 +7,7 @@ export const getPugs = () => (dispatch, _, {axios}) => axios.get('/pugs')
   .catch(console.error.bind(console))
 
 export default (state = {}, action) => {
+  console.log(action)
   if (action.type === ADD_ENTITIES) {
     return {
       ...state,

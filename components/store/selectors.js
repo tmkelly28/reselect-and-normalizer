@@ -1,5 +1,14 @@
 import {createSelector} from 'reselect'
 
+/*
+ * {
+ *  pugs: {
+ *    1: {},
+ *    2: {}
+ *  }
+ * }
+ */
+
 export const selectPugs = ({pugs, owners}) => {
   return Object.keys(pugs)
     .map(id => ({
@@ -7,6 +16,11 @@ export const selectPugs = ({pugs, owners}) => {
       owner: owners[pugs[id].ownerId]
     }))
 }
+
+// export const selectPugsAndOwnersStr = createSelector(
+//   selectPugs,
+//   ({name}) => name
+// )
 
 const byColor = name => ({color}) => color === name
 const fawn = byColor('fawn')
